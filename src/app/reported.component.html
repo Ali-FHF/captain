@@ -1,0 +1,45 @@
+<!--     <div>
+    	<h1>Reported User History</h1>
+      <h2>{{hero.name}} details!</h2>
+      <div><label>id: </label>{{hero.id}}</div>
+      <div>
+        <label>name: </label>
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+      </div>
+    </div> -->
+
+<div class="history-grid">
+
+<div class="historycol feature-flex-item">
+
+<img  src="'../../assets/images/history.png">
+<h3>Reported User History</h3>
+
+
+<!-- | slice:1:2 -->
+<div class="col feature-flex-item">
+
+  <p *ngFor="let loan of myloandata | async ">
+   Brokerage Name: {{loan.brokerage_name}} <br> 
+   Phone:  {{loan.brokerage_phone}}
+  </p>
+</div>
+<!--  <p>Illud dico, ea, quae dicat, praeclare inter se cohaerere.</p>
+<p>Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex.</p>
+<p>Quod non faceret, si in voluptate summum bonum poneret.</p>
+<p>Ita multo sanguine profuso in laetitia et in victoria</p>  -->
+
+</div>
+
+
+
+<div class="historycol feature-flex-item">
+<img src="'../../assets/images/verified.png">
+<h3>Verified User History</h3>
+ <p>Illud dico, ea, quae dicat, praeclare inter se cohaerere.</p>
+<p>Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex.</p>
+<p>Quod non faceret, si in voluptate summum bonum poneret.</p>
+<p>Ita multo sanguine profuso in laetitia et in victoria</p> 
+</div>
+
+</div>

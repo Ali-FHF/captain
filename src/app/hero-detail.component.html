@@ -1,0 +1,33 @@
+<div *ngIf="hero">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label>id: </label>{{hero.id}}</div>
+  <div>
+    <label> Cyber Ridge Loan Number: </label>
+    <input [(ngModel)]="hero.cyberridge_loan_number" placeholder="name" />
+  </div>
+
+    <div>
+    <label> Brokerage Name: </label>
+    <input [(ngModel)]="hero.brokerage_name" placeholder="name" />
+  </div>
+
+    <div>
+    <label> Brokerage Phone: </label>
+    <input [(ngModel)]="hero.brokerage_phone" placeholder="name" />
+  </div>
+
+    <div>
+    <label> Insurance Start Date: </label>
+    <input [(ngModel)]="hero.insurance_start_date" placeholder="name" />
+  </div>
+
+    <div>
+    <label> Policy Notes : </label>
+    <input [(ngModel)]="hero.policy_notes_about_policy" placeholder="name" />
+  </div>
+
+
+
+  <button (click)="goBack()">Back</button>
+</div>
