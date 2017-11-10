@@ -1,0 +1,14 @@
+<h2>My Policies</h2>
+<ul class="policies">
+  <li *ngFor="let policy of policies"
+    [class.selected]="policy === selectedPolicy"
+    (click)="onSelect(policy)">
+    <span class="badge">{{policy.id}}</span> {{policy.name}}
+  </li>
+</ul>
+<div *ngIf="selectedPolicy">
+  <h2>
+    {{selectedPolicy.name | uppercase}} is an active policy
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>

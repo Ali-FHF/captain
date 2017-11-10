@@ -1,0 +1,29 @@
+<div class="history-grid">
+
+<div class="historycol feature-flex-item">
+
+<img  src="'../../assets/images/history.png">
+<h3>Reported User History</h3>
+
+
+<div class="col feature-flex-item">
+<p *ngFor="let fact of facto | async | slice:0:1">Loan Number : {{fact.loan_number}}<br>
+Vin Number : {{fact.vin}} <br> 
+Insured Name  {{fact.insured_first_name}} ,  {{fact.insured_last_name}}<br>
+</p>
+</div>
+
+
+</div>
+
+<div class="historycol feature-flex-item">
+<img src="'../../assets/images/verified.png">
+<h3>Verified User History</h3>
+<p *ngFor="let fact of facto | async | slice:0:1">Loan Number : {{fact.loan_number}}<br>
+Vin Number : {{fact.vin}} <br> 
+Insured First Name:   {{fact.insured_first_name}} <br>
+ Insured last Name  {{fact.insured_last_name}}<br>
+</p> 
+</div>
+
+</div>

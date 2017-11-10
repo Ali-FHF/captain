@@ -1,4 +1,4 @@
-export class Hero {
+export class Policy {
 id: number;
 name: string;
 cyberridge_loan_number: string; 

@@ -15,7 +15,10 @@ import { Component } from '@angular/core';
       <a routerLink="/heroes" routerLinkActive="active">Other Policies</a>
     </nav>
     <router-outlet></router-outlet>
-    <reported-detail></reported-detail>
+      <verifacto></verifacto> 
+  <reported-detail> </reported-detail> 
+
+
   `,
   styleUrls: ['./app.component.css'],
 })

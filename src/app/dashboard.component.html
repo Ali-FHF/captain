@@ -1,28 +1,19 @@
 <h3>Edit Insurance Details</h3>
 <div class="edit-container">
-  <a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
-      <h4><label>Cyber Ridge Loan Number: &nbsp;{{hero.cyberridge_loan_number}}</label></h4>
+  <a *ngFor="let policy of policies"  [routerLink]="['/detail', policy.id]">
+    <div class="module policy">
+      <h4>{{policy.name}}</h4>
+      <h4><label>Cyber Ridge Loan Number: &nbsp;{{policy.cyberridge_loan_number}}</label></h4>
 
-  		<h4><label>Insurance Start Date: &nbsp;{{hero.insurance_start_date}}</label></h4>
+  		<h4><label>Insurance Start Date: &nbsp;{{policy.insurance_start_date}}</label></h4>
 
-       <h4><label>Brokerage Name: &nbsp;{{hero.brokerage_name}}</label></h4>
+       <h4><label>Brokerage Name: &nbsp;{{policy.brokerage_name}}</label></h4>
 
-       <h4><label>Brokerage Phone Number: &nbsp;{{hero.brokerage_phone}}</label></h4>
+       <h4><label>Brokerage Phone Number: &nbsp;{{policy.brokerage_phone}}</label></h4>
 
+         <h4><label>Policy Collison Deductible: &nbsp;{{policy.policy_collison_deductible_amt}}</label></h4>
+       <h4><label>Policy Notes: &nbsp;{{policy.policy_notes_about_policy}}</label></h4>
 
-     
-
-         <h4><label>Policy Collison Deductible: &nbsp;{{hero.policy_collison_deductible_amt}}</label></h4>
-       <h4><label>Policy Notes: &nbsp;{{hero.policy_notes_about_policy}}</label></h4>
-
-
-
-
-       <!--   <h4><label>Policy Comprehensive Deductible: &nbsp;{{hero.policy_collison_deductible_amt}}</label></h4> -->
-
-   <!--       <h4><label>Data Source &nbsp;{{hero.data_source}}</label></h4> -->
       
     </div>
   </a>

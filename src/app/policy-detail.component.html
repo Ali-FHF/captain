@@ -1,0 +1,33 @@
+<div class="details-container" *ngIf="policy">
+  <h2>{{policy.name}} details!</h2>
+  <div>
+    <label class="editlabel">id: </label>{{policy.id}}</div>
+  <div>
+    <label class="editlabel"> Cyber Ridge Loan Number: </label>
+    <input [(ngModel)]="policy.cyberridge_loan_number" placeholder="name" />
+  </div>
+
+    <div>
+    <label class="editlabel"> Brokerage Name: </label>
+    <input [(ngModel)]="policy.brokerage_name" placeholder="name" />
+  </div>
+
+    <div>
+    <label class="editlabel"> Brokerage Phone: </label>
+    <input [(ngModel)]="policy.brokerage_phone" placeholder="name" />
+  </div>
+
+    <div>
+    <label class="editlabel"> Insurance Start Date: </label>
+    <input [(ngModel)]="policy.insurance_start_date" placeholder="name" />
+  </div>
+
+    <div>
+    <label class="editlabel"> Policy Notes : </label>
+    <input [(ngModel)]="policy.policy_notes_about_policy" placeholder="name" />
+  </div>
+
+
+
+  <button (click)="goBack()">Back</button>
+</div>

@@ -1,6 +1,6 @@
-import { Hero } from './hero';
+import { Policy } from './policy';
 
-export const HEROES: Hero[] = [
+export const POLICIES: Policy[] = [
   { id: 11, name: 'Infinit G35 Policy',
   cyberridge_loan_number: "FHFL-0000-0001-2191",
    brokerage_name: "State Farm Insurance",

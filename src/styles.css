@@ -12,6 +12,13 @@ font-size: 40px !important;
 
 }
 
+.blog h1 {
+
+  color: #000 !important; 
+}
+
+
+
 .loan-header {
 
 height: 150px; 
@@ -40,6 +47,13 @@ justify-content: center;
 min-height: 300px; 
 background-color: #cccccc; }
 
+.details-container {
+
+margin: 0 auto; 
+
+
+}
+
 .flex-grid {
 display: flex;
 flex-direction: row;
@@ -66,21 +80,7 @@ flex: 1;
 }
 
 
-h1 {
-  color: #fff !important;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
-}
-h2, h3 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
 
-body, input[text], button {
-  color: #888;
-  font-family: Cambria, Georgia;
-}
 a {
   cursor: pointer;
   cursor: hand;
@@ -126,7 +126,7 @@ nav a.active {
 
 /* everywhere else */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 
 @media (max-width: 400px) {
@@ -136,8 +136,3 @@ nav a.active {
 }
 
 
-/*
-Copyright 2017 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

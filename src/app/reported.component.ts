@@ -9,7 +9,7 @@ import {LoanUserService} from './loan.user.service';
 })
 export class ReportedComponent  {
  
- // boom - defining an array property called myloandata
+ //  defining an array property called myloandata
 myloandata; 
 
 // now i inject the loanService in the constructor 

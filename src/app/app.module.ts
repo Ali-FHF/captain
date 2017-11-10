@@ -4,32 +4,45 @@ import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard.component';
-import { HeroDetailComponent }  from './hero-detail.component';
-import { HeroesComponent }      from './heroes.component';
-import { HeroService }          from './hero.service';
+import { PolicyDetailComponent }  from './policy-detail.component';
+import { PolicyComponent }      from './policy.component';
+import { PolicyService }          from './policy.service';
 import { ReportedComponent }  from './reported.component';
 import { AppRoutingModule }     from './app-routing.module';
 import { UserComponent } from './user.component';
 import { UserService } from './user.service';
 import {LoanService} from './loan.service'; 
 import {LoanUserService} from './loan.user.service';
+import { PostsComponent } from './posts.component'; 
+import { VerifactoComponent } from './verifacto.component'; 
+import {VerifactoService} from './verifacto.service'; 
+import { SubmittedComponent } from './usersubmitted.component'; 
+// import {PassengerDashboardModule} from './passenger-dashboard/passenger-dashboard.module'; 
+
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
 	   HttpModule,
-    AppRoutingModule
+      AppRoutingModule
+      // custom module
+     // PassengerDashboardModule 
+   
   ],
   declarations: [
     AppComponent,
     DashboardComponent,
-    HeroDetailComponent,
+    PolicyDetailComponent,
+    PostsComponent,
+    VerifactoComponent,  
+    SubmittedComponent, 
     UserComponent,
     ReportedComponent, 
-    HeroesComponent
+    PolicyComponent
   ],
-  providers: [UserService,HeroService,LoanUserService,LoanService ],
+  providers: [UserService,PolicyService,VerifactoService,LoanUserService,LoanService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
