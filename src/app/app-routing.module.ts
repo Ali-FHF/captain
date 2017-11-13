@@ -5,12 +5,13 @@ import { DashboardComponent }   from './dashboard.component';
 import { PolicyComponent }      from './policy.component';
 import { PolicyDetailComponent }  from './policy-detail.component';
 import {VerifactoComponent} from './verifacto.component'; 
+import {VerifactoDetailComponent} from './verifacto-detail.component'; 
 
-
-const routes: Routes = [
+export const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard',  component: DashboardComponent },
   { path: 'verifacto',  component: VerifactoComponent },
+  { path: 'VerifactoDetail', component: VerifactoDetailComponent },
   { path: 'detail/:id', component: PolicyDetailComponent },
   { path: 'policy', component: PolicyComponent }
 ];

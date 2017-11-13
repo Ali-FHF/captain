@@ -16,14 +16,20 @@ Insured Name  {{fact.insured_first_name}} ,  {{fact.insured_last_name}}<br>
 
 </div>
 
-<div class="historycol feature-flex-item">
+<a [routerLink]="['/VerifactoDetail']"><div class="historycol feature-flex-item">
 <img src="'../../assets/images/verified.png">
 <h3>Verified User History</h3>
-<p *ngFor="let fact of facto | async | slice:0:1">Loan Number : {{fact.loan_number}}<br>
-Vin Number : {{fact.vin}} <br> 
+<p *ngFor="let fact of facto | async | slice:0:1">
 Insured First Name:   {{fact.insured_first_name}} <br>
- Insured last Name  {{fact.insured_last_name}}<br>
+Insured last Name: {{fact.insured_last_name}}<br>
+You're Insurance Agency : {{fact.agent_name}} <br> 
+Coverage Start Date : {{fact.coverage_start_date}} <br> 
+Coverage End Date : {{fact.coverage_end_date}} <br> 
+Loan Number : {{fact.loan_number}}<br>
+Vin Number : {{fact.vin}} <br> 
+
+
 </p> 
-</div>
+</div></a>
 
 </div>

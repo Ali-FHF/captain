@@ -1,0 +1,88 @@
+<div class="details-container">
+  <h2> Verifacto Details!</h2>
+  <div>
+    <label class="editlabel"> First Name : </label>{{verifacto.insured_first_name}}</div>
+  <div>
+    <label class="editlabel"> Last Name: </label>
+    <input [(ngModel)]="verifacto.insured_last_name" placeholder="name" />
+  </div>
+
+    <div>
+    <label class="editlabel"> Loan Number: </label>
+    <input [(ngModel)]="verifacto.loan_number" placeholder="name" />
+  </div>
+
+    <div>
+    <label class="editlabel"> VIN: </label>
+    <input [(ngModel)]="verifacto.vin" placeholder="name" />
+  </div>
+
+    <div>
+    <label class="editlabel"> Customer Number: </label>
+    <input [(ngModel)]="verifacto.customer_num" placeholder="name" />
+  </div>
+
+    <div>
+    <label class="editlabel"> Policy Status : </label>
+    <input [(ngModel)]="verifacto.policy_status" placeholder="name" />
+  </div>
+
+      <div>
+    <label class="editlabel"> Policy Number </label>
+    <input [(ngModel)]="verifacto.policy_num" placeholder="name" />
+  </div>
+
+
+    <div>
+    <label class="editlabel"> Coverage Start Date: </label>
+    <input [(ngModel)]="verifacto.coverage_start_date" placeholder="name" />
+  </div>
+
+
+    <div>
+    <label class="editlabel"> Coverage End Date:  </label>
+    <input [(ngModel)]="verifacto.coverage_end_date" placeholder="name" />
+  </div>
+
+
+<div>
+<label class="editlabel"> Cancellation Date </label>
+<input [(ngModel)]="verifacto.cancellation_date" placeholder="name" />
+</div>
+
+<div>
+<label class="editlabel"> Agent Name </label>
+<input [(ngModel)]="verifacto.agent_name" placeholder="name" />
+</div>
+
+
+<div>
+<label class="editlabel"> Agent Phone </label>
+<input [(ngModel)]="verifacto.agent_phone" placeholder="name" />
+</div>
+
+
+<div>
+<label class="editlabel"> Do you have collision coverage ?  </label>
+<input [(ngModel)]="verifacto.has_collision" placeholder="name" />
+</div>
+
+
+<div>
+<label class="editlabel"> Collision Deductible </label>
+<input [(ngModel)]="verifacto.collision_ded" placeholder="name" />
+</div>
+
+
+<div>
+<label class="editlabel"> Policy Notes </label>
+<input [(ngModel)]="verifacto.issue_name_1" placeholder="name" />
+<input [(ngModel)]="verifacto.issue_name_2" placeholder="name" />
+<input [(ngModel)]="verifacto.issue_name_3" placeholder="name" />
+</div>
+
+
+
+
+  <button (click)="goBack()">Back</button>
+</div>

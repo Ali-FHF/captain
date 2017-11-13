@@ -15,9 +15,10 @@ import {LoanService} from './loan.service';
 import {LoanUserService} from './loan.user.service';
 import { PostsComponent } from './posts.component'; 
 import { VerifactoComponent } from './verifacto.component'; 
+import { VerifactoDetailComponent } from './verifacto-detail.component'; 
 import {VerifactoService} from './verifacto.service'; 
 import { SubmittedComponent } from './usersubmitted.component'; 
-// import {PassengerDashboardModule} from './passenger-dashboard/passenger-dashboard.module'; 
+
 
 
 
@@ -26,17 +27,15 @@ import { SubmittedComponent } from './usersubmitted.component';
     BrowserModule,
     FormsModule,
 	   HttpModule,
-      AppRoutingModule
-      // custom module
-     // PassengerDashboardModule 
-   
-  ],
+      AppRoutingModule],
+
   declarations: [
     AppComponent,
     DashboardComponent,
     PolicyDetailComponent,
     PostsComponent,
-    VerifactoComponent,  
+    VerifactoComponent, 
+    VerifactoDetailComponent, 
     SubmittedComponent, 
     UserComponent,
     ReportedComponent, 

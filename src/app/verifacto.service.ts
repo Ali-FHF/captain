@@ -16,4 +16,11 @@ export class VerifactoService {
 				.map((res:Response) => res.json().items)
 				.catch((error:any) => Observable.throw(error.json().error || 'Server Error')); 
 	}
+
+
+	// getVerifacto(customer_num: number): Promise<VerifactoDataModel> {
+
+	// 	return this.getVerifactoData()
+	// 		.then(facto => facto.find(verifacto => verifacto.customer_num === customer_num)); 
+	// }
 } 
